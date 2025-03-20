@@ -11,7 +11,7 @@ This project is a simple server-side application utilizing **Node.js**, **Expres
 
 ## Prerequisites
 To run the project locally, ensure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (v16.x or above recommended)
+- [Node.js](https://nodejs.org/) (v20.x or above recommended)
 - [PostgreSQL](https://www.postgresql.org/)
 ## Installation
 1. Clone the repository:
@@ -36,22 +36,6 @@ The app automatically initializes the database on the first run, checking for it
 A stress testing script is included to benchmark the performance of the `updateBalance` API.
 - To run the stress test:
   node stressTest.js
-  
-## Project Structure
-.
-├── .env                 # Environment configuration
-├── app.js               # Express app configuration
-├── stressTest.js        # Stress testing script
-├── public
-│   ├── src
-│   │   ├── configs      # Configuration files (Sequelize, environment)
-│   │   ├── middlewares  # Custom Express middleware
-│   │   ├── migrations   # Database migration scripts
-│   │   ├── models       # Sequelize models
-│   │   ├── routes       # Routes definitions
-│   │   └── services     # Business/service layer
-│   └── umzug.js         # Umzug migration manager
-└── package.json         # Project metadata and dependencies
 
 ## Known Issues
 - Ensure the database configuration in `.env` matches your PostgreSQL setup to avoid connection errors.
